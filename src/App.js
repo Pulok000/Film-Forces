@@ -8,14 +8,14 @@ import MovieCard from "./MovieCard";
 // b8a557f5
 const API_URL='https://www.omdbapi.com?apikey=b8a557f5'
 
-const movie = {
-        "Title": "Spiderman and Grandma",
-        "Year": "2009",
-        "imdbID": "tt1433184",
-        "Type": "movie",
-        "Poster": "https://m.media-amazon.com/images/M/MV5BMjE3Mzg0MjAxMl5BMl5BanBnXkFtZTcwNjIyODg5Mg@@._V1_SX300.jpg"
+// const movie = {
+//         "Title": "Spiderman and Grandma",
+//         "Year": "2009",
+//         "imdbID": "tt1433184",
+//         "Type": "movie",
+//         "Poster": "https://m.media-amazon.com/images/M/MV5BMjE3Mzg0MjAxMl5BMl5BanBnXkFtZTcwNjIyODg5Mg@@._V1_SX300.jpg"
 
-    }
+//     }
 
 
 const App=()=>{
@@ -29,12 +29,12 @@ const App=()=>{
         setMovies(data.Search);
     }
     useEffect(()=>{
-        searchMovies('spiderman');
+        searchMovies('America');
     },[]);
 
 
     return (
-        <div classname="app">
+        <div className="app">
             <h1> Film Forces</h1>
 
             <div className="search">
@@ -73,3 +73,5 @@ const App=()=>{
 }
 
 export default App;
+
+
